@@ -4687,3 +4687,47 @@ input, select, textarea {
 		}
 
 	}
+.quick-stats {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.stat-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.stat-card h3 {
+    color: #18bfef;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.stat-card p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .stat-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
